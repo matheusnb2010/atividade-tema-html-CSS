@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Um site, seis temas</title>
+  <meta name="description" content="Atividade de HTML e CSS: a mesma página com seis temas diferentes, trocados só com CSS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,800&family=Space+Grotesk:wght@400;700&family=Bungee&family=DM+Mono:wght@400;500&family=Baloo+2:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Os botões de rádio ficam no topo do body para o CSS enxergar qual está marcado -->
+  <header class="topo">
+    <fieldset class="seletor">
+      <legend>Escolha um tema</legend>
+      <input type="radio" name="tema" id="t-oceano" checked>
+      <label for="t-oceano">Oceano</label>
+      <input type="radio" name="tema" id="t-floresta">
+      <label for="t-floresta">Floresta</label>
+      <input type="radio" name="tema" id="t-espaco">
+      <label for="t-espaco">Espaço</label>
+      <input type="radio" name="tema" id="t-retro">
+      <label for="t-retro">Retrô</label>
+      <input type="radio" name="tema" id="t-doce">
+      <label for="t-doce">Doce</label>
+      <input type="radio" name="tema" id="t-neon">
+      <label for="t-neon">Neon</label>
+    </fieldset>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Um site, seis temas</h1>
+      <p class="lead">Esta página nunca muda de conteúdo. Clique nos temas acima e veja cores, fontes, cantos e sombras mudarem só com CSS.</p>
+    </section>
+
+    <section class="cartoes" aria-labelledby="titulo-cartoes">
+      <h2 id="titulo-cartoes">O que você vai praticar</h2>
+      <article class="cartao">
+        <h3>Variáveis CSS</h3>
+        <p>Cada tema é um conjunto de variáveis como <code>--fundo</code> e <code>--destaque</code>. O resto do CSS só usa essas variáveis.</p>
+      </article>
+      <article class="cartao">
+        <h3>Seletor :has()</h3>
+        <p>Quando um botão de tema está marcado, o <code>body</code> troca as variáveis. Nenhuma linha de JavaScript.</p>
+      </article>
+      <article class="cartao">
+        <h3>Tipografia</h3>
+        <p>Cada tema tem um par de fontes: uma para títulos e outra para o texto corrido.</p>
+      </article>
+    </section>
+
+    <section class="tabela-area" aria-labelledby="titulo-tabela">
+      <h2 id="titulo-tabela">O que muda em cada tema</h2>
+      <div class="rolagem">
+        <table>
+          <thead>
+            <tr><th>Tema</th><th>Fonte dos títulos</th><th>Cantos</th><th>Sensação</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Oceano</td><td>Josefin Sans</td><td>Arredondados</td><td>Calma e clara</td></tr>
+            <tr><td>Floresta</td><td>Fraunces</td><td>Quase retos</td><td>Escura e acolhedora</td></tr>
+            <tr><td>Espaço</td><td>Space Grotesk</td><td>Bem redondos</td><td>Noite com brilho</td></tr>
+            <tr><td>Retrô</td><td>Bungee</td><td>Retos, borda grossa</td><td>Cartaz dos anos 80</td></tr>
+            <tr><td>Doce</td><td>Baloo 2</td><td>Muito redondos</td><td>Leve e divertida</td></tr>
+            <tr><td>Neon</td><td>Space Grotesk</td><td>Retos com brilho</td><td>Futurista e cibernética</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="desafio" aria-labelledby="titulo-desafio">
+      <h2 id="titulo-desafio">Desafio</h2>
+      <ol>
+        <li>Abra o <code>style.css</code> e copie o bloco de um tema.</li>
+        <li>Crie o seu: troque o nome, as cores e as fontes.</li>
+        <li>Adicione um botão novo no <code>index.html</code> com o mesmo <code>id</code> do seu tema.</li>
+        <li>Publique no GitHub Pages e envie o link.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Atividade de HTML e CSS · feita para publicar no GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
